@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('MuseoSans.woff2') format('woff2'), url('MuseoSans.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font: 200 14px/1.2 "MuseoSans", sans-serif;
+    background: url(../img/bg.jpg);
+    background-size: cover;
+    color: rgb(155, 155, 155);
+}
+
+
+/* Layout */
+
+.ba-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 700px;
+}
+
+
+/* Typography */
+
+a,
+input[type="submit"],
+input[type="button"],
+button {
+    transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+    display: inline-block;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover {}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+    transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {}
+
+.ba-shoes {
+    background-color: #111A28;
+    margin: 110px 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 30px 10px #000;
+    position: relative;
+    padding: 75px 50px 75px 50px;
+    display: flex;
+    align-items: center;
+}
+
+.ba-shoes__logo {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.ba-shoes__pic {
+    width: 60%;
+    padding-right: 20px;
+}
+
+.ba-info__heading {
+    color: #96999E;
+    font-size: 24px;
+    margin: 0;
+}
+
+.ba-info__desc {
+    color: #96999E;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+
+/*textarea {}*/
+
+.ba-raiting>span {
+    margin-bottom: 25px;
+    display: inline-block;
+    position: relative;
+    width: 14px;
+    color: #f5c918;
+}
+
+.ba-choise {
+    display: flex;
+    margin-bottom: 31px;
+}
+
+.ba-choise__size,
+.ba-choise__qty {
+    background-color: #111A28;
+    padding: 0 10px;
+    min-height: 33px;
+    min-width: 70px;
+    margin-left: 4px;
+    line-height: 31px;
+}
+
+.ba-choise__button {
+    background-color: #111A28;
+    min-height: 40px;
+    line-height: 39px;
+    padding: 0 57px;
+    border: 1px solid #bebfc2;
+}
+
+.ba-choise__button:hover {
+    background-color: #6d8bb6;
+}
